@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WordKeep: learn it, keep it</title>
+  <meta name="description" content="Vocabulary revision with meanings, sample sentences, quizzes and automatic retesting.">
+  <meta name="theme-color" content="#2d3fe0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,600..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div>
+        <h1>WordKeep</h1>
+        <p class="tagline" id="hello">Learn it. Keep it.</p>
+      </div>
+      <p class="streak" id="streak" aria-live="polite"></p>
+    </header>
+    <nav class="tabs" aria-label="Sections" id="tabs">
+      <button type="button" data-view="today">Today</button>
+      <button type="button" data-view="cards">Cards</button>
+      <button type="button" data-view="quiz">Quiz</button>
+      <button type="button" data-view="words">Words</button>
+      <button type="button" data-view="progress">Progress</button>
+    </nav>
+    <main id="view"></main>
+    <footer class="foot"><p>Progress is saved in this browser only. Use Progress &rarr; Download to share it.</p></footer>
+  </div>
+  <noscript><p class="wrap">WordKeep needs JavaScript to run.</p></noscript>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
